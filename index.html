@@ -134,8 +134,26 @@
         position: relative;
 
         display: flex;
-        flex-direction: column;
+        align-items: center;
         justify-content: center;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+      }
+      
+      .art-box::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color 0.3s ease;
+        border-radius: 360px;
+        z-index: 1;
+      }
+      
+      .art-box:hover::after {
+        background-color: rgba(0, 0, 0, 0.5); /* black transparent layer */
       }
 
       .art-summary {
@@ -262,7 +280,7 @@
       <!-- Sunlife App Design -->
       <div class="art-box">
         <div class="art-summary">
-          <p>Best Story Ever</p>
+          <p>Sunlife UX Design Jam</p>
         </div>
       </div>
       
