@@ -120,6 +120,28 @@
         margin: 0 auto;
       }
 
+      .art-box {
+        background-color: #FEBACB;
+        width: 300px;
+        height: 300px;
+        border-radius: 360px;
+        padding: 1em;
+        font-family: "Kite One", sans-serif;
+        font-size: 1.5em;
+        color: black;
+        transition: all 0.4s ease;
+        overflow: hidden;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .art-summary {
+        text-align: center;
+      }
+
       .nav-bar {
         position: fixed;
         top: 0;
@@ -128,7 +150,7 @@
         z-index: 1000;
         /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
       }
-      
+
       .nav-bar ul {
         list-style-type: none;
         overflow: hidden;
@@ -141,7 +163,7 @@
       .nav-bar li {
         float: left;
       }
-      
+
       .nav-bar li a {
         position: relative;
         display: block;
@@ -163,7 +185,7 @@
       }
     </style>
   </head>
-  
+
   <body>
     <div class="webInfo">
       <!-- Navigation Bar -->
@@ -176,8 +198,77 @@
         </ul>
       </div>
     </div>
-  
-  
+
+    <!-- Gallery Title -->
+    <div class="section-title">
+      <div class="intro">
+        <h1>
+          <span>G</span><span>a</span><span>l</span><span>l</span><span>e</span><span>r</span><span>y</span>
+        </h1>
+      </div>
+    </div>
+
+    
+    <div class="container">
+      <!-- Photography -->
+      <div class="art-box">
+        <div class="art-summary">
+          <p>Photography</p>
+        </div>
+      </div>
+      
+      <!-- Poster -->
+      <div class="art-box">
+        <div class="art-summary">
+          <p>Poster</p>
+        </div>
+      </div>
+      
+      <!-- Figma -->
+      <div class="art-box">
+        <div class="art-summary">
+          <p>Figma</p>
+        </div>
+      </div>
+      
+      
+    </div>
+
+
+    <!-- Project Title -->
+    <div class="section-title">
+      <div class="intro">
+        <h1>
+          <span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span>
+        </h1>
+      </div>
+    </div>
+    
+    <div class="container">
+      <!-- Photography -->
+      <div class="art-box">
+        <div class="art-summary">
+          <p>Product Rebranding</p>
+        </div>
+      </div>
+      
+      <!-- Poster -->
+      <div class="art-box">
+        <div class="art-summary">
+          <p>Best Story Ever</p>
+        </div>
+      </div>
+      
+      <!-- Sunlife App Design -->
+      <div class="art-box">
+        <div class="art-summary">
+          <p>Best Story Ever</p>
+        </div>
+      </div>
+      
+    </div>
+
+
+
   </body>
 </html>
-    
