@@ -155,9 +155,18 @@
       .art-box:hover::after {
         background-color: rgba(0, 0, 0, 0.5); /* black transparent layer */
       }
-
+      
       .art-summary {
+        position: relative;
+        z-index: 2;
         text-align: center;
+        color: #FE97AC;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      .art-box:hover .art-summary {
+        opacity: 1;
       }
 
       .nav-bar {
@@ -229,21 +238,21 @@
     
     <div class="container">
       <!-- Photography -->
-      <div class="art-box">
+      <div class="art-box" style="background-image: url('1.Landscape-min.JPG');">
         <div class="art-summary">
           <p>Photography</p>
         </div>
       </div>
       
       <!-- Poster -->
-      <div class="art-box">
+      <div class="art-box" style="background-image: url('Poster Deisign-01-min.png');">
         <div class="art-summary">
           <p>Poster</p>
         </div>
       </div>
       
       <!-- Figma -->
-      <div class="art-box">
+      <div class="art-box" style="background-image: url('Xu_Sofia_W8.png');">
         <div class="art-summary">
           <p>Figma</p>
         </div>
